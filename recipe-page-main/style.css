@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+    font-family: "young Serif", Arial;
+}
+
+p,
+li,
+h5 {
+    font-family: Outfit;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(90, 90, 90, 0.2);
+    margin-top: 40px;
+    margin-bottom: -15px;
+}
+
+span {
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+
+li {
+    margin: 10px 20px;
+    color: hsl(30, 10%, 34%);
+    font-size: 14px;
+}
+
+.preparation-time {
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+h5 {
+    font-size: 16px;
+    color: hsl(332, 51%, 32%);
+}
+
+h3 {
+    color: hsl(14, 45%, 36%);
+}
+
+.food-container {
+    background-color: #fff;
+    width: 650px;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.food-image-container>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.food-container-top>h1 {
+    color: hsl(24, 5%, 18%);
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+.food-container-top>p {
+    font-size: 14px;
+    margin-bottom: 40px;
+    color: hsl(30, 10%, 34%);
+}
+
+.food-ingredients {
+    margin-bottom: 50px;
+}
+
+.nutrition {
+    margin-top: 50px;
+}
+
+.nutrition>h3 {
+    margin-bottom: 20px;
+}
+
+.nutrition>p {
+    color: hsl(30, 10%, 34%);
+    font-size: 14px;
+}
+
+.table {
+    margin-top: 20px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: hsl(30, 10%, 34%);
+}
+
+.table>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table>div:last-child{
+    border-bottom: none;
+}
+
+.table>div>p:last-child {
+    margin-right: 40%;
+    text-align: left;
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+@media (max-width: 760px){
+    body{
+        padding: 0;
+    }
+    .food-container{
+        padding: 0;
+    }
+    .mobile-container{
+        padding: 35px;
+    }
+    .food-container-top>p{
+        font-size: 18px;
+    }
+}
